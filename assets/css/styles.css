@@ -1,6 +1,6 @@
 header {
     font-family: 'Georgia', Times, Times 'Times New Roman', serif;
-
+    margin: 0;
 }
 
 body {
@@ -9,11 +9,12 @@ body {
 }
 
 main {
-    /*width: 960px;*/
-    background-image: url("assets/images/dust_scratches.png");
+    
+    background-image: url("../images/dust_scratches.png");
     padding-bottom: 6%;
-    padding-top: 10%;
-    background-image: url(assets/images/dust_scratches.png);
+    padding-top: 6%;
+    font-size: 16px;
+    
 }
 
 h1 {
@@ -21,14 +22,17 @@ h1 {
 
 }
 
+h2 {
+    color: teal;
+    margin-left: 2%;
+    font-size: 150%;
+}
 nav {
-    /*padding: 25px 25px 25px 50px;*/
+    
     background-color: white;
-    margin-bottom: 50px;
     width: 960px;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-bottom: 0.01%;
+    margin: 0 auto;
+    
 
 
 }
@@ -38,20 +42,42 @@ nav {
     color: white;
     background-color: teal;
     padding: 8px;
+    margin: 0;
 }
 
 .anchor-nav{
     float: right;
-    padding: 10px
+    padding-right: auto;
+    padding-left: auto; 
+    margin: 0;
+    list-style-type: none;
+
+      
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+
+    font-weight: bold;
+    
+    
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    
 }
 
 .maincontent {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 0 auto;
     background-color: white;
     width: 960px;
     flex: 1 0 auto; 
-    background-image: url(assets/images/dust_scratches.png);
+    border: 2px solid white;
+    /* border-radius: 30px; */
+    overflow: auto;
+    color: rgb(122, 122, 122);
+    
     
     
 }
@@ -62,12 +88,85 @@ nav {
     color: white;
     background-color: #666666;
     text-align: center;
-    padding: 30px;
+    padding: 60px 0px 0px 0px;
+    height: 15%;
+    
+    
 
+}
 
+.footercontent {
+    margin: 0; 
 }
 
 .headshot {
     float: left;
     height: 200px;
+    padding: 8px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+.navline {
+    margin: 0;
+    background-color: lightgray;
+    border-color: lightgray;
+    display: block;
+    border-top: 1px solid lightgray;
+    padding: 0; 
+    
+}
+
+.contentline {
+    background-color: lightgray;
+    border-color: lightgray;
+    display: block;
+    border-top: 1px solid lightgray;
+    padding: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.form {
+    border: none;
+    overflow: auto;
+}
+
+.fieldset {
+    border: none;
+    color: gray;
+    font-weight: 550;
+}
+
+.field {
+    width: 85%;
+    margin: 5px auto 5px auto;
+    
+
+}
+
+.formmessage {
+    width: 85%;
+    margin: 5px auto 5px auto;
+    height: 150px;
+    overflow: auto;
+
+}
+
+.submitbutton {
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border-color: teal;
+    font-size: 110%;
+
+}
+
+.portfolioimage {
+    margin: 5px 10px 15px 5px;
 }

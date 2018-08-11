@@ -7,28 +7,31 @@
     </head>
 
     <body> 
-        <header>
+        <header class="clearfix">
            
             <nav>
-                    <h1 class="name-nav">Jonatan Martinez</h1>
-                    <a href="contact.html" class="anchor-nav">Contact</a>
-                    <a href="portfolio.html" class="anchor-nav">Portfolio</a>
-                    <a href="index.html" class="anchor-nav">About</a>
-                </nav>
+                <h1 class="name-nav">Jonatan Martinez</h1>
+                    <ul>
+                        <li class="anchor-nav"><a href="contact.html">Contact</a></li>
+                        <li class="anchor-nav"><a href="portfolio.html">Portfolio |</a></li>
+                        <li class="anchor-nav"><a href="index.html">About |</a></li>
+                    </ul>
+                
+            </nav>
         </header>
         <main>
             <div class="maincontent">
                 <h2>Contact</h2>
-
-                    <form>
-                        <fieldset>
+                <hr class="navline">
+                    <form class="form">
+                        <fieldset class="fieldset">
                             <label>Name</label><br>
-                            <input type="text" required="yes" placeholder="Your Name"><br>
+                            <input type="text" required="yes" placeholder="Your Name" class="field" maxlength="25"><br>
                             <label>Email</label><br>
-                            <input type="text" required="yes" placeholder="Your Email"><br>
+                            <input type="text" required="yes" placeholder="Your Email" class="field" maxlength="25"><br>
                             <label>Message</label><br>
-                            <input type="text" required="yes" placeholder="Your Message"><br>
-                            <button>Submit</button>
+                            <textarea type="text" required="yes" placeholder="Your Message" class="formmessage" maxlength="400"></textarea><br>
+                            <input type="submit" value="Submit" class="submitbutton">
                         </fieldset>
             
                     </form>
@@ -36,7 +39,7 @@
         </main>
 
         <footer class="footer">
-                <p>
+                <p class="footercontent">
                     Copyright&copy;
                 </p>
             </footer>
